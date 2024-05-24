@@ -1,0 +1,65 @@
+body {
+    font-family: 'Montserrat';
+}
+header {
+    background-color: #0B1C51;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px 0 0;
+}
+
+@media all and (min-width: 600px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+    }
+  
+    header h1 {
+      margin: 14px 0;
+      /* Removes or sets 0 pixels of padding above the `h1`. */
+      padding-top: 0;
+    }
+  
+    header nav {
+      /*
+        Pushes the navigation container down by 8 pixels to make it
+        present a little better visually within the space.
+      */
+      margin-top: 8px;
+    }
+    /* Users cannot hover on mobile devices, so that is why you
+       implement this behavior only for larger screens. */
+    header nav ul li a:hover {
+      /* Targets the change when a user holds the pointer over the anchor tag 
+         (link) within the list items within the unordered list that 
+         is within the navigation that is within the header. */
+      color: #bdbdbd;
+    }
+}
